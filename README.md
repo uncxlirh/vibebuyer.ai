@@ -187,6 +187,7 @@ The AI agent lives in `agent.py` and is designed as a **Solution Architect** / P
 "roi_analysis": "Why this stack provides the best ROI for the budget / goal.",
 "total_vibe_score": 27.9
 }
+```
 The prompt explicitly asks the model to:
 
 - Respect the available product list (`id`, `price`, `vibe_score`, `ecosystem`, `monthly_cost`)
