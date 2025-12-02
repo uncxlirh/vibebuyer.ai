@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Vercel Pro",
+    "price": 0.02,
+    "category": "Hosting",
+    "description": "Zero-config deployment for Next.js and React apps with a global edge network and one-click rollbacks.",
+    "vibe_score": 9.8,
+    "ecosystem": ["React", "Next.js", "Node.js", "Frontend"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 2,
+    "name": "OpenAI API Starter",
+    "price": 0.03,
+    "category": "AI API",
+    "description": "Starter credits to run GPT models in indie SaaS products, chatbots, and internal tools.",
+    "vibe_score": 9.7,
+    "ecosystem": ["LLM", "Python", "Node.js", "SaaS"],
+    "monthly_cost": 50
+  },
+  {
+    "id": 3,
+    "name": "Midjourney Credits",
+    "price": 0.025,
+    "category": "AI Design",
+    "description": "Generate marketing visuals, product shots, and illustrations for landing pages and socials.",
+    "vibe_score": 9.4,
+    "ecosystem": ["Discord", "Branding", "Marketing", "Creative"],
+    "monthly_cost": 30
+  },
+  {
+    "id": 4,
+    "name": "Tailwind UI Pack",
+    "price": 0.018,
+    "category": "UI Library",
+    "description": "Production-ready Tailwind CSS components to ship polished UIs without hiring a designer.",
+    "vibe_score": 9.3,
+    "ecosystem": ["Tailwind CSS", "React", "Next.js", "Frontend"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 5,
+    "name": "Notion Startup OS",
+    "price": 0.015,
+    "category": "Productivity",
+    "description": "A Notion workspace for indie hackers to track roadmap, metrics, and daily execution.",
+    "vibe_score": 9.0,
+    "ecosystem": ["Notion", "Kanban", "OKRs", "Docs"],
+    "monthly_cost": 10
+  },
+  {
+    "id": 6,
+    "name": "Framer SaaS Landing Kit",
+    "price": 0.022,
+    "category": "Design",
+    "description": "High-converting Framer templates tailored for SaaS and AI tool landing pages.",
+    "vibe_score": 9.1,
+    "ecosystem": ["Framer", "Marketing Sites", "No-code"],
+    "monthly_cost": 19
+  },
+  {
+    "id": 7,
+    "name": "Ahrefs Lite Month",
+    "price": 0.035,
+    "category": "Marketing",
+    "description": "Keyword research and backlink analysis to help your project rank on Google.",
+    "vibe_score": 9.0,
+    "ecosystem": ["SEO", "Content", "Growth"],
+    "monthly_cost": 99
+  },
+  {
+    "id": 8,
+    "name": "MailerLite Automation Starter",
+    "price": 0.012,
+    "category": "Email Marketing",
+    "description": "Set up welcome flows, newsletters, and basic automations for early-stage email lists.",
+    "vibe_score": 8.7,
+    "ecosystem": ["Email", "Newsletters", "Onboarding", "CRM"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 9,
+    "name": "Supabase Managed Tier",
+    "price": 0.028,
+    "category": "Backend",
+    "description": "Postgres, auth, and storage for MVPs with a developer-friendly dashboard and APIs.",
+    "vibe_score": 9.2,
+    "ecosystem": ["Postgres", "Auth", "Storage", "Edge Functions"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 10,
+    "name": "PlanetScale Serverless DB",
+    "price": 0.03,
+    "category": "Backend",
+    "description": "Serverless MySQL with branching for safe schema changes in production.",
+    "vibe_score": 9.1,
+    "ecosystem": ["MySQL", "Serverless", "Vitess", "Backend"],
+    "monthly_cost": 29
+  },
+  {
+    "id": 11,
+    "name": "Alchemy Node Access",
+    "price": 0.04,
+    "category": "Web3 Infra",
+    "description": "Reliable RPC and indexing APIs for building dapps, trading bots, and on-chain analytics.",
+    "vibe_score": 9.3,
+    "ecosystem": ["Ethereum", "EVM", "RPC", "Analytics"],
+    "monthly_cost": 49
+  },
+  {
+    "id": 12,
+    "name": "QuickNode Starter",
+    "price": 0.032,
+    "category": "Web3 Infra",
+    "description": "Multi-chain RPC access to experiment with DeFi, NFTs, and on-chain agents.",
+    "vibe_score": 9.0,
+    "ecosystem": ["Multichain", "DeFi", "NFTs", "Agents"],
+    "monthly_cost": 39
+  },
+  {
+    "id": 13,
+    "name": "thirdweb Contract Boilerplates",
+    "price": 0.027,
+    "category": "Smart Contracts",
+    "description": "Ready-made smart contract templates and SDKs for NFT drops and marketplaces.",
+    "vibe_score": 8.9,
+    "ecosystem": ["EVM", "NFT", "SDKs", "Marketplaces"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 14,
+    "name": "Figma Pro Team",
+    "price": 0.026,
+    "category": "Design",
+    "description": "Collaborative design workspace for UI, branding, and marketing asset iteration.",
+    "vibe_score": 9.4,
+    "ecosystem": ["Figma", "Product Design", " UX", "Branding"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 15,
+    "name": "Loom Pro Month",
+    "price": 0.01,
+    "category": "Communication",
+    "description": "Record async product walkthroughs, updates, and customer demos in a few clicks.",
+    "vibe_score": 8.8,
+    "ecosystem": ["Video", "Support", "Sales", "Onboarding"],
+    "monthly_cost": 12
+  },
+  {
+    "id": 16,
+    "name": "Zapier Task Pack",
+    "price": 0.019,
+    "category": "Automation",
+    "description": "Connect your indie stack with Zaps that sync payments, CRM, and notifications.",
+    "vibe_score": 9.0,
+    "ecosystem": ["Zapier", "Stripe", "Slack", "Notion"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 17,
+    "name": "Discord Community Toolkit",
+    "price": 0.009,
+    "category": "Community",
+    "description": "Pre-built channels, roles, and onboarding flows to grow a Discord community.",
+    "vibe_score": 8.6,
+    "ecosystem": ["Discord", "Community", "Web3", "Gaming"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 18,
+    "name": "Product Hunt Launch Kit",
+    "price": 0.008,
+    "category": "Launch",
+    "description": "Notion-based checklist, copy templates, and outreach CRM for Product Hunt launches.",
+    "vibe_score": 8.9,
+    "ecosystem": ["Product Hunt", "Notion", "Launch", "Growth"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 19,
+    "name": "Mixpanel Starter",
+    "price": 0.021,
+    "category": "Analytics",
+    "description": "Track activation, retention, and funnels to understand product-market fit.",
+    "vibe_score": 9.1,
+    "ecosystem": ["Product Analytics", "Events", "Funnels", "Retention"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 20,
+    "name": "Bubble Prototype Credits",
+    "price": 0.024,
+    "category": "No-code",
+    "description": "No-code builder credits to prototype dashboards, CRUD apps, and internal tools.",
+    "vibe_score": 8.8,
+    "ecosystem": ["Bubble", "No-code", "MVP", "Internal Tools"],
+    "monthly_cost": 29
+  }
+]

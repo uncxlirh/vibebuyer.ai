@@ -1,0 +1,250 @@
+/* ---------------- GLOBAL ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: #F5F5F7;
+    color: #111;
+    font-size: 18px; /* 全局增大 */
+    letter-spacing: -0.01em;
+}
+
+footer {visibility: hidden;}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* 实际 Apple 宽度：接近 1400～1500 像素 */
+.block-container {
+    padding-top: 1.4rem;
+    max-width: 1500px !important;
+    margin: 0 auto;
+}
+
+
+/* ---------------- HERO ---------------- */
+
+.hero-wrapper {
+    padding: 48px 60px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F4F7FF 40%, #E8EEFF 100%);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.10);
+    margin-bottom: 1.6rem;
+}
+
+.hero-text {
+    font-size: 84px; /* 极大，Apple 风 */
+    font-weight: 800;
+    letter-spacing: -0.055em;
+    line-height: 1.03;
+}
+
+.hero-highlight {
+    background: linear-gradient(135deg, #007AFF 0%, #0A84FF 50%, #4EA3FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+    font-size: 24px;
+    margin-top: 14px;
+    color: #555;
+    max-width: 650px;
+}
+
+
+/* ---------------- SECTION LABEL ---------------- */
+
+.section-label {
+    margin: 0.3rem 0 0.4rem 0 !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #888;
+    text-transform: uppercase;
+}
+
+
+/* ---------------- METRICS ---------------- */
+
+div[data-testid="stMetric"] {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 24px 26px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.15s ease-out;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+div[data-testid="stMetricLabel"] {
+    font-size: 18px !important;
+    color: #666 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 40px !important; /* 数字变大 */
+    font-weight: 800 !important;
+    background: linear-gradient(90deg, #007AFF, #0A84FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div[data-testid="stMetricDelta"] {
+    font-size: 16px !important;
+}
+
+
+/* ---------------- INPUT PANEL ---------------- */
+
+.glass-panel {
+    margin-top: 1.4rem;
+    margin-bottom: 1.6rem;
+    padding: 26px 28px;
+    border-radius: 22px;
+    background: #FFF;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.stTextInput input {
+    font-size: 20px !important;
+    padding: 16px 20px !important;
+    border-radius: 14px !important;
+    border: 2px solid #E0E0E0 !important;
+}
+
+.stTextInput input:focus {
+    border-color: #007AFF !important;
+    box-shadow: 0 0 0 3px rgba(0,122,255,0.25) !important;
+}
+
+
+/* Main button */
+.stButton button {
+    background: #007AFF !important;
+    color: white !important;
+    font-size: 20px !important;
+    padding: 14px 24px !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 10px 26px rgba(0,122,255,0.32);
+}
+
+.stButton button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 36px rgba(0,122,255,0.40);
+}
+
+
+/* ---------------- AI BOX ---------------- */
+
+.ai-box {
+    background: #FFF;
+    border-radius: 18px;
+    padding: 20px 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+}
+
+.ai-box p {
+    font-size: 20px;
+    color: #444;
+}
+
+
+/* ---------------- PRODUCT CARD ---------------- */
+
+.vibe-card {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 22px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+    transition: 0.16s ease-out;
+}
+
+.vibe-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.12);
+}
+
+.vibe-tag {
+    background: rgba(0,122,255,0.1);
+    color: #007AFF;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 22px; /* 大字号 */
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-desc {
+    font-size: 18px; /* 大字号 */
+    color: #666;
+    margin-bottom: 18px;
+    line-height: 1.55;
+}
+
+.card-price {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* ---------------- SIDEBAR ---------------- */
+
+/* 更有重量感的侧边栏整体背景 */
+section[data-testid="stSidebar"] {
+    background: #ECEFF4;
+    border-right: 1px solid rgba(15,23,42,0.12);
+    box-shadow: 6px 0 24px rgba(15,23,42,0.12);
+}
+
+/* 内部主卡片，像 Apple 的左侧面板 */
+.sidebar-inner {
+    margin: 16px 12px;
+    padding: 20px 18px 22px 18px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    box-shadow: 0 18px 40px rgba(15,23,42,0.12);
+    border: 1px solid rgba(15,23,42,0.06);
+}
+
+/* Sidebar 标题字体更大一点 */
+.sidebar-inner h3, 
+.sidebar-inner h2, 
+.sidebar-inner h1 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 4px !important;
+}
+
+/* “Pro Edition v3.0”等说明的字号也加一点 */
+.sidebar-inner p, 
+.sidebar-inner span, 
+.sidebar-inner label {
+    font-size: 16px;
+}
+
+/* 成功/提示卡片做得更厚一些 */
+.sidebar-inner .stAlert {
+    border-radius: 16px;
+    padding: 14px 14px;
+    box-shadow: 0 10px 26px rgba(15,23,42,0.10);
+    font-size: 15px;
+}

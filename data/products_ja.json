@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Vercel Pro デプロイクレジット",
+    "price": 0.02,
+    "category": "ホスティング",
+    "description": "Next.js と React アプリをゼロ設定でデプロイできるプラン。グローバルエッジネットワークとワンクリックロールバック付き。",
+    "vibe_score": 9.8,
+    "ecosystem": ["React", "Next.js", "Node.js", "Frontend"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 2,
+    "name": "OpenAI API スタータークレジット",
+    "price": 0.03,
+    "category": "AI API",
+    "description": "インディー SaaS、チャットボット、社内ツールで GPT モデルを動かすためのスタータークレジット。",
+    "vibe_score": 9.7,
+    "ecosystem": ["LLM", "Python", "Node.js", "SaaS"],
+    "monthly_cost": 50
+  },
+  {
+    "id": 3,
+    "name": "Midjourney 画像生成クレジット",
+    "price": 0.025,
+    "category": "AI デザイン",
+    "description": "ランディングページや SNS 用のマーケティング画像・プロダクトショット・イラストを生成。",
+    "vibe_score": 9.4,
+    "ecosystem": ["Discord", "Branding", "Marketing", "Creative"],
+    "monthly_cost": 30
+  },
+  {
+    "id": 4,
+    "name": "Tailwind UI コンポーネントパック",
+    "price": 0.018,
+    "category": "UI ライブラリ",
+    "description": "プロダクションレディな Tailwind CSS コンポーネントで、デザイナーなしでも美しい UI をすばやく構築。",
+    "vibe_score": 9.3,
+    "ecosystem": ["Tailwind CSS", "React", "Next.js", "Frontend"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 5,
+    "name": "Notion Startup OS テンプレート",
+    "price": 0.015,
+    "category": "プロダクティビティ",
+    "description": "インディーハッカー向けに、ロードマップ・メトリクス・タスクを一元管理できる Notion ワークスペース。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Notion", "Kanban", "OKRs", "Docs"],
+    "monthly_cost": 10
+  },
+  {
+    "id": 6,
+    "name": "Framer SaaS ランディングキット",
+    "price": 0.022,
+    "category": "デザイン",
+    "description": "SaaS や AI ツール向けに最適化された高コンバージョンな Framer ランディングページテンプレート。",
+    "vibe_score": 9.1,
+    "ecosystem": ["Framer", "Marketing Sites", "No-code"],
+    "monthly_cost": 19
+  },
+  {
+    "id": 7,
+    "name": "Ahrefs Lite 1ヶ月プラン",
+    "price": 0.035,
+    "category": "マーケティング",
+    "description": "キーワードリサーチと被リンク分析で、あなたのプロジェクトの Google ランキングを伸ばす。",
+    "vibe_score": 9.0,
+    "ecosystem": ["SEO", "Content", "Growth"],
+    "monthly_cost": 99
+  },
+  {
+    "id": 8,
+    "name": "MailerLite 自動化スタータープラン",
+    "price": 0.012,
+    "category": "メールマーケ",
+    "description": "ウェルカムフローやニュースレター、基本的なオートメーションを構築できる早期ユーザー向けメール基盤。",
+    "vibe_score": 8.7,
+    "ecosystem": ["Email", "Newsletters", "Onboarding", "CRM"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 9,
+    "name": "Supabase マネージドティア",
+    "price": 0.028,
+    "category": "バックエンド",
+    "description": "MVP 向けの Postgres・認証・ストレージを提供する開発者フレンドリーなバックエンド基盤。",
+    "vibe_score": 9.2,
+    "ecosystem": ["Postgres", "Auth", "Storage", "Edge Functions"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 10,
+    "name": "PlanetScale サーバーレス DB",
+    "price": 0.03,
+    "category": "バックエンド",
+    "description": "スキーマ変更を安全に試せるブランチ機能付きのサーバーレス MySQL。",
+    "vibe_score": 9.1,
+    "ecosystem": ["MySQL", "Serverless", "Vitess", "Backend"],
+    "monthly_cost": 29
+  },
+  {
+    "id": 11,
+    "name": "Alchemy ノードアクセス",
+    "price": 0.04,
+    "category": "Web3 インフラ",
+    "description": "dapp・ボット・オンチェーン分析のための安定した RPC とインデックス API。",
+    "vibe_score": 9.3,
+    "ecosystem": ["Ethereum", "EVM", "RPC", "Analytics"],
+    "monthly_cost": 49
+  },
+  {
+    "id": 12,
+    "name": "QuickNode スタータープラン",
+    "price": 0.032,
+    "category": "Web3 インフラ",
+    "description": "DeFi・NFT・オンチェーンエージェントを試作できるマルチチェーン RPC アクセス。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Multichain", "DeFi", "NFTs", "Agents"],
+    "monthly_cost": 39
+  },
+  {
+    "id": 13,
+    "name": "thirdweb コントラクトボイラープレート",
+    "price": 0.027,
+    "category": "スマートコントラクト",
+    "description": "NFT ドロップやマーケットプレイス向けのスマートコントラクトテンプレートと SDK セット。",
+    "vibe_score": 8.9,
+    "ecosystem": ["EVM", "NFT", "SDKs", "Marketplaces"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 14,
+    "name": "Figma Pro チームプラン",
+    "price": 0.026,
+    "category": "デザイン",
+    "description": "UI・ブランド・マーケ素材を共同で素早く作れるコラボレーションデザインワークスペース。",
+    "vibe_score": 9.4,
+    "ecosystem": ["Figma", "Product Design", "UX", "Branding"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 15,
+    "name": "Loom Pro 1ヶ月プラン",
+    "price": 0.01,
+    "category": "コミュニケーション",
+    "description": "数クリックでプロダクトのウォークスルーや非同期アップデート、カスタマーデモを録画。",
+    "vibe_score": 8.8,
+    "ecosystem": ["Video", "Support", "Sales", "Onboarding"],
+    "monthly_cost": 12
+  },
+  {
+    "id": 16,
+    "name": "Zapier タスクパック",
+    "price": 0.019,
+    "category": "オートメーション",
+    "description": "Stripe・Slack・Notion などを連携し、支払い・CRM・通知フローを自動化する Zaps 集。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Zapier", "Stripe", "Slack", "Notion"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 17,
+    "name": "Discord コミュニティツールキット",
+    "price": 0.009,
+    "category": "コミュニティ",
+    "description": "事前に用意されたチャンネル構成・ロール・オンボーディングフローで Discord コミュニティを素早く立ち上げ。",
+    "vibe_score": 8.6,
+    "ecosystem": ["Discord", "Community", "Web3", "Gaming"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 18,
+    "name": "Product Hunt ローンチキット",
+    "price": 0.008,
+    "category": "ローンチ",
+    "description": "Product Hunt ローンチのための Notion ベースチェックリスト、コピーのテンプレート、アウトリーチ CRM。",
+    "vibe_score": 8.9,
+    "ecosystem": ["Product Hunt", "Notion", "Launch", "Growth"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 19,
+    "name": "Mixpanel スタータープラン",
+    "price": 0.021,
+    "category": "アナリティクス",
+    "description": "アクティベーション・リテンション・ファネルを計測し、プロダクトマーケットフィットを検証。",
+    "vibe_score": 9.1,
+    "ecosystem": ["Product Analytics", "Events", "Funnels", "Retention"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 20,
+    "name": "Bubble プロトタイプクレジット",
+    "price": 0.024,
+    "category": "ノーコード",
+    "description": "ダッシュボード、CRUD アプリ、社内ツールをすばやく試作できる Bubble ノーコードクレジット。",
+    "vibe_score": 8.8,
+    "ecosystem": ["Bubble", "No-code", "MVP", "Internal Tools"],
+    "monthly_cost": 29
+  }
+]

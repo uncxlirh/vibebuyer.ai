@@ -1,0 +1,6 @@
+建议你在仓库里新建一个目录：docs/，放截图 & 架构图：
+
+docs/architecture.png：简单画一下「User → Streamlit App → Agent (LLM) → BSC Testnet (VibeMarket.sol) → Protocol Fee」。
+docs/home.png：主页 / Hero + AI Architect 区域截图。
+docs/stack.png：AI 推荐 Stack + 卡片展示区域截图。
+docs/tx.png：购买成功后 + BscScan 交易详情截屏。

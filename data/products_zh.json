@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Vercel Pro 部署额度",
+    "price": 0.02,
+    "category": "托管",
+    "description": "为 Next.js 和 React 应用提供零配置部署，内置全球边缘网络和一键回滚。",
+    "vibe_score": 9.8,
+    "ecosystem": ["React", "Next.js", "Node.js", "Frontend"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 2,
+    "name": "OpenAI API 起步额度",
+    "price": 0.03,
+    "category": "AI 接口",
+    "description": "用于在独立 SaaS、聊天机器人和内部工具中调用 GPT 模型的起步额度。",
+    "vibe_score": 9.7,
+    "ecosystem": ["LLM", "Python", "Node.js", "SaaS"],
+    "monthly_cost": 50
+  },
+  {
+    "id": 3,
+    "name": "Midjourney 图像生成额度",
+    "price": 0.025,
+    "category": "AI 设计",
+    "description": "为落地页与社交媒体生成营销素材、产品图与插画。",
+    "vibe_score": 9.4,
+    "ecosystem": ["Discord", "Branding", "Marketing", "Creative"],
+    "monthly_cost": 30
+  },
+  {
+    "id": 4,
+    "name": "Tailwind UI 组件包",
+    "price": 0.018,
+    "category": "UI 库",
+    "description": "生产级 Tailwind CSS 组件，让你在没有设计师的情况下也能快速做出精致界面。",
+    "vibe_score": 9.3,
+    "ecosystem": ["Tailwind CSS", "React", "Next.js", "Frontend"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 5,
+    "name": "Notion Startup OS 模板",
+    "price": 0.015,
+    "category": "效率工具",
+    "description": "为独立开发者设计的 Notion 工作区，用来追踪 roadmap、指标和日常执行。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Notion", "Kanban", "OKRs", "Docs"],
+    "monthly_cost": 10
+  },
+  {
+    "id": 6,
+    "name": "Framer SaaS 落地页套件",
+    "price": 0.022,
+    "category": "设计",
+    "description": "专为 SaaS 和 AI 产品打造的高转化 Framer 落地页模板。",
+    "vibe_score": 9.1,
+    "ecosystem": ["Framer", "Marketing Sites", "No-code"],
+    "monthly_cost": 19
+  },
+  {
+    "id": 7,
+    "name": "Ahrefs Lite 月度订阅",
+    "price": 0.035,
+    "category": "营销",
+    "description": "关键词研究与外链分析，帮助你的项目在 Google 上获取排名。",
+    "vibe_score": 9.0,
+    "ecosystem": ["SEO", "Content", "Growth"],
+    "monthly_cost": 99
+  },
+  {
+    "id": 8,
+    "name": "MailerLite 自动化入门版",
+    "price": 0.012,
+    "category": "邮件营销",
+    "description": "为早期邮件列表搭建欢迎流程、Newsletter 与基础自动化。",
+    "vibe_score": 8.7,
+    "ecosystem": ["Email", "Newsletters", "Onboarding", "CRM"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 9,
+    "name": "Supabase 托管级别",
+    "price": 0.028,
+    "category": "后端",
+    "description": "为 MVP 提供 Postgres、认证和存储，带有友好的控制台与 API。",
+    "vibe_score": 9.2,
+    "ecosystem": ["Postgres", "Auth", "Storage", "Edge Functions"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 10,
+    "name": "PlanetScale 无服务器数据库",
+    "price": 0.03,
+    "category": "后端",
+    "description": "支持分支开发的无服务器 MySQL，适合在生产环境安全修改表结构。",
+    "vibe_score": 9.1,
+    "ecosystem": ["MySQL", "Serverless", "Vitess", "Backend"],
+    "monthly_cost": 29
+  },
+  {
+    "id": 11,
+    "name": "Alchemy 节点访问",
+    "price": 0.04,
+    "category": "Web3 基础设施",
+    "description": "稳定的 RPC 与索引 API，用于搭建 dapp、交易机器人和链上分析。",
+    "vibe_score": 9.3,
+    "ecosystem": ["Ethereum", "EVM", "RPC", "Analytics"],
+    "monthly_cost": 49
+  },
+  {
+    "id": 12,
+    "name": "QuickNode 入门计划",
+    "price": 0.032,
+    "category": "Web3 基础设施",
+    "description": "多链 RPC 接入，用于快速试验 DeFi、NFT 与链上智能体。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Multichain", "DeFi", "NFTs", "Agents"],
+    "monthly_cost": 39
+  },
+  {
+    "id": 13,
+    "name": "thirdweb 智能合约模板",
+    "price": 0.027,
+    "category": "智能合约",
+    "description": "用于 NFT 发售、市场等场景的合约模板与 SDK，一键集成。",
+    "vibe_score": 8.9,
+    "ecosystem": ["EVM", "NFT", "SDKs", "Marketplaces"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 14,
+    "name": "Figma Pro 团队版",
+    "price": 0.026,
+    "category": "设计",
+    "description": "协作设计空间，用于快速迭代产品 UI、品牌和营销素材。",
+    "vibe_score": 9.4,
+    "ecosystem": ["Figma", "Product Design", "UX", "Branding"],
+    "monthly_cost": 15
+  },
+  {
+    "id": 15,
+    "name": "Loom Pro 月度订阅",
+    "price": 0.01,
+    "category": "沟通协作",
+    "description": "几次点击即可录制产品演示、异步更新和客户使用说明视频。",
+    "vibe_score": 8.8,
+    "ecosystem": ["Video", "Support", "Sales", "Onboarding"],
+    "monthly_cost": 12
+  },
+  {
+    "id": 16,
+    "name": "Zapier 自动化任务包",
+    "price": 0.019,
+    "category": "自动化",
+    "description": "用 Zaps 将你的独立开发工具链串起来，打通支付、CRM 和通知。",
+    "vibe_score": 9.0,
+    "ecosystem": ["Zapier", "Stripe", "Slack", "Notion"],
+    "monthly_cost": 20
+  },
+  {
+    "id": 17,
+    "name": "Discord 社区工具包",
+    "price": 0.009,
+    "category": "社区运营",
+    "description": "预设频道结构、角色与入群引导，帮助你从 0 搭建 Discord 社区。",
+    "vibe_score": 8.6,
+    "ecosystem": ["Discord", "Community", "Web3", "Gaming"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 18,
+    "name": "Product Hunt 发布工具包",
+    "price": 0.008,
+    "category": "上线发布",
+    "description": "基于 Notion 的发布清单、文案模板与外联 CRM，专为 Product Hunt 首发设计。",
+    "vibe_score": 8.9,
+    "ecosystem": ["Product Hunt", "Notion", "Launch", "Growth"],
+    "monthly_cost": 0
+  },
+  {
+    "id": 19,
+    "name": "Mixpanel 入门计划",
+    "price": 0.021,
+    "category": "数据分析",
+    "description": "追踪激活、留存与转化漏斗，判断你的产品是否真正打中用户需求。",
+    "vibe_score": 9.1,
+    "ecosystem": ["Product Analytics", "Events", "Funnels", "Retention"],
+    "monthly_cost": 25
+  },
+  {
+    "id": 20,
+    "name": "Bubble 原型制作额度",
+    "price": 0.024,
+    "category": "无代码",
+    "description": "用于快速搭建仪表盘、CRUD 应用和内部工具的 Bubble 无代码原型额度。",
+    "vibe_score": 8.8,
+    "ecosystem": ["Bubble", "No-code", "MVP", "Internal Tools"],
+    "monthly_cost": 29
+  }
+]
