@@ -159,7 +159,7 @@
             payable(owner).transfer(address(this).balance);
         }
     }
-
+    ```
     The Streamlit app uses `chain_utils.py` to:
 
     - Load the deployed contract (`contract_config.json`)
