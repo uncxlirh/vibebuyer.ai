@@ -16,7 +16,7 @@ def query_ollama(prompt, model="llama3.1"):
         "prompt": prompt,
         "stream": False,
         "temperature": 0.2,
-        "format": "json"
+        "format": "json" 
     }
     try:
         response = requests.post(url, json=data)
@@ -24,11 +24,23 @@ def query_ollama(prompt, model="llama3.1"):
     except Exception as e:
         return f'{{"error": "{str(e)}"}}'
 
-def run_agent_reasoning(user_query, lang="en"):
-    products = load_products_by_lang("en")
+def run_agent_reasoning(user_query, lang="en", preferred_ids=None):
+    if preferred_ids is None:
+        preferred_ids = []
+        
+    products = load_products_by_lang("en") 
+    
+    preferred_context = ""
+    if preferred_ids:
+        p_names = [p['name'] for p in products if p['id'] in preferred_ids]
+        preferred_context = f"\nUser explicitly PINNED/LIKED these tools: {', '.join(p_names)}. You MUST try to include them in the stack if they fit."
+
+
     prompt = f"""
     You are VibeBuyer, a Senior Solutions Architect.
     User Goal: "{user_query}"
+    
+    {preferred_context}
     
     Available Tools (Inventory):
     {json.dumps(products, ensure_ascii=False)}
@@ -47,14 +59,16 @@ def run_agent_reasoning(user_query, lang="en"):
         "total_vibe_score": "Average vibe score of items"
     }}
     """
+    
     print(f"🧠 AI Architecting for: {user_query}...")
     raw_res = query_ollama(prompt)
+    
     try:
         return json.loads(raw_res)
     except:
         return {
-            "thought_process": "AI formatting error.",
+            "thought_process": "AI formatting error.", 
             "stack_name": "Error",
-            "selected_ids": [],
+            "selected_ids": [], 
             "roi_analysis": "N/A"
         }
