@@ -1,0 +1,222 @@
+[
+  {
+    "id": "tool_1",
+    "name": "Splitbee Analytics",
+    "url": "https://splitbee.io",
+    "source": "product_hunt",
+    "summary": "Lightweight analytics with funnels and events, popular among indie hackers who want quick insights without enterprise overhead.",
+    "tags": ["analytics", "product", "funnels", "events", "indie-hacker"],
+    "vibe_score": 9.2,
+    "created_at": "2025-11-10",
+    "linked_product_id": 19
+  },
+  {
+    "id": "tool_2",
+    "name": "Railway.app",
+    "url": "https://railway.app",
+    "source": "twitter",
+    "summary": "Deploy backends, workers, and databases with almost zero DevOps. Great for quickly shipping prototypes and SaaS backends.",
+    "tags": ["devtools", "hosting", "backend", "database", "serverless"],
+    "vibe_score": 9.0,
+    "created_at": "2025-11-08",
+    "linked_product_id": 9
+  },
+  {
+    "id": "tool_3",
+    "name": "Clerk Auth",
+    "url": "https://clerk.com",
+    "source": "product_hunt",
+    "summary": "Drop-in authentication and user management for React / Next.js apps, with social logins and session handling built-in.",
+    "tags": ["auth", "saas", "devtools", "nextjs", "user-management"],
+    "vibe_score": 8.9,
+    "created_at": "2025-11-05",
+    "linked_product_id": 9
+  },
+  {
+    "id": "tool_4",
+    "name": "Dub.co",
+    "url": "https://dub.co",
+    "source": "twitter",
+    "summary": "Beautiful open-source link shortener for modern SaaS products, with branded domains and analytics.",
+    "tags": ["marketing", "links", "open-source", "analytics", "saas"],
+    "vibe_score": 8.7,
+    "created_at": "2025-11-03",
+    "linked_product_id": 7
+  },
+  {
+    "id": "tool_5",
+    "name": "Cron Jobs by Trigger.dev",
+    "url": "https://trigger.dev",
+    "source": "indie_hackers",
+    "summary": "Background jobs and scheduled tasks for TypeScript apps. Ideal for email digests, billing cycles, and async workflows.",
+    "tags": ["automation", "jobs", "typescript", "devtools", "backend"],
+    "vibe_score": 8.8,
+    "created_at": "2025-11-02",
+    "linked_product_id": 16
+  },
+  {
+    "id": "tool_6",
+    "name": "Tally Forms",
+    "url": "https://tally.so",
+    "source": "product_hunt",
+    "summary": "Notion-style form builder with generous free tier, used for waitlists, feedback, and lightweight lead capture.",
+    "tags": ["forms", "no-code", "marketing", "leadgen", "indie"],
+    "vibe_score": 8.5,
+    "created_at": "2025-10-30",
+    "linked_product_id": 8
+  },
+  {
+    "id": "tool_7",
+    "name": "Plausible Analytics",
+    "url": "https://plausible.io",
+    "source": "twitter",
+    "summary": "Privacy-friendly analytics with a simple dashboard, good for founders who want quick read on traffic and conversions.",
+    "tags": ["analytics", "privacy", "simple", "founder", "product"],
+    "vibe_score": 9.0,
+    "created_at": "2025-10-28",
+    "linked_product_id": 19
+  },
+  {
+    "id": "tool_8",
+    "name": "Liveblocks",
+    "url": "https://liveblocks.io",
+    "source": "product_hunt",
+    "summary": "Real-time presence, cursors, and multiplayer editing for your app. Great fit for Notion-like collaborative tools.",
+    "tags": ["realtime", "collaboration", "multiplayer", "frontend", "saas"],
+    "vibe_score": 8.9,
+    "created_at": "2025-10-25",
+    "linked_product_id": 14
+  },
+  {
+    "id": "tool_9",
+    "name": "Lemon Squeezy",
+    "url": "https://lemonsqueezy.com",
+    "source": "indie_hackers",
+    "summary": "Payments, subscriptions, and tax handling for SaaS and digital products. Popular Stripe alternative for solo devs.",
+    "tags": ["payments", "billing", "saas", "subscriptions", "indie-hacker"],
+    "vibe_score": 9.1,
+    "created_at": "2025-10-22",
+    "linked_product_id": 16
+  },
+  {
+    "id": "tool_10",
+    "name": "Typedream",
+    "url": "https://typedream.com",
+    "source": "product_hunt",
+    "summary": "No-code website builder with Notion-like editing, used by indie hackers for quick landing pages and link-in-bio sites.",
+    "tags": ["no-code", "landing-page", "marketing", "website", "founder"],
+    "vibe_score": 8.4,
+    "created_at": "2025-10-20",
+    "linked_product_id": 6
+  },
+  {
+    "id": "tool_11",
+    "name": "Raycast AI",
+    "url": "https://raycast.com/ai",
+    "source": "twitter",
+    "summary": "Command palette meets AI copilot on the desktop. Useful for developers to automate workflows and quick prompts.",
+    "tags": ["ai", "productivity", "desktop", "automation", "devtools"],
+    "vibe_score": 9.3,
+    "created_at": "2025-10-18",
+    "linked_product_id": 2
+  },
+  {
+    "id": "tool_12",
+    "name": "Typedesk",
+    "url": "https://typedesk.com",
+    "source": "product_hunt",
+    "summary": "Text snippet manager for support, sales and founders who send lots of repeated messages.",
+    "tags": ["productivity", "support", "sales", "snippets", "ops"],
+    "vibe_score": 8.2,
+    "created_at": "2025-10-16",
+    "linked_product_id": 15
+  },
+  {
+    "id": "tool_13",
+    "name": "Bannerbear",
+    "url": "https://bannerbear.com",
+    "source": "twitter",
+    "summary": "Auto-generate social images, banners and marketing visuals via API — fits perfectly with Product Hunt launch workflows.",
+    "tags": ["images", "marketing", "automation", "api", "growth"],
+    "vibe_score": 8.8,
+    "created_at": "2025-10-14",
+    "linked_product_id": 3
+  },
+  {
+    "id": "tool_14",
+    "name": "Arc Browser Boosts",
+    "url": "https://arc.net",
+    "source": "twitter",
+    "summary": "Custom Boosts (mini-userscripts) that modify any website UI and workflow. Popular among power users and indie builders.",
+    "tags": ["browser", "automation", "frontend", "ux", "poweruser"],
+    "vibe_score": 8.6,
+    "created_at": "2025-10-12",
+    "linked_product_id": 4
+  },
+  {
+    "id": "tool_15",
+    "name": "Cron Calendar",
+    "url": "https://cron.com",
+    "source": "product_hunt",
+    "summary": "Modern calendar for busy founders, helps coordinate launches, content schedules, and meetings.",
+    "tags": ["productivity", "calendar", "founder", "scheduling", "ops"],
+    "vibe_score": 8.1,
+    "created_at": "2025-10-10",
+    "linked_product_id": 5
+  },
+  {
+    "id": "tool_16",
+    "name": "Typedream Memberships",
+    "url": "https://typedream.com/memberships",
+    "source": "indie_hackers",
+    "summary": "Gate content and features behind paywalls without writing backend code, aimed at creators and micro-SaaS.",
+    "tags": ["memberships", "no-code", "creator", "saas", "monetization"],
+    "vibe_score": 8.5,
+    "created_at": "2025-10-08",
+    "linked_product_id": 18
+  },
+  {
+    "id": "tool_17",
+    "name": "Turso",
+    "url": "https://turso.tech",
+    "source": "twitter",
+    "summary": "SQLite databases at the edge. Low-latency data for global users, with a developer-friendly DX.",
+    "tags": ["database", "edge", "devtools", "performance", "saas"],
+    "vibe_score": 9.0,
+    "created_at": "2025-10-06",
+    "linked_product_id": 10
+  },
+  {
+    "id": "tool_18",
+    "name": "Typedream Docs",
+    "url": "https://typedream.com/docs",
+    "source": "product_hunt",
+    "summary": "Documentation sites for SaaS products, built on the same no-code stack as Typedream.",
+    "tags": ["docs", "saas", "no-code", "developer-experience"],
+    "vibe_score": 8.0,
+    "created_at": "2025-10-05",
+    "linked_product_id": 6
+  },
+  {
+    "id": "tool_19",
+    "name": "Whop",
+    "url": "https://whop.com",
+    "source": "indie_hackers",
+    "summary": "Marketplace and infra for selling communities, digital products and SaaS access — used heavily by solo builders.",
+    "tags": ["creator-economy", "marketplace", "saas", "community"],
+    "vibe_score": 8.7,
+    "created_at": "2025-10-03",
+    "linked_product_id": 17
+  },
+  {
+    "id": "tool_20",
+    "name": "Typedream AI Sections",
+    "url": "https://typedream.com/ai",
+    "source": "product_hunt",
+    "summary": "Generate landing page sections with AI, then edit them visually. Good for fast iteration on marketing copy.",
+    "tags": ["ai", "landing-page", "copywriting", "marketing"],
+    "vibe_score": 8.6,
+    "created_at": "2025-10-02",
+    "linked_product_id": 6
+  }
+]

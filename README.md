@@ -34,13 +34,13 @@ Indie hackers and small AI builders face the same recurring problem:
 
 - There are **too many tools** (Vercel, Supabase, OpenAI, Mixpanel, Ahrefs, MailerLite, etc.).
 - Most people just **ask ChatGPT for recommendations**, then manually:
-- compare pricing pages,
-- assemble a stack in Notion,
-- and copy-paste credit cards / wallets across multiple sites.
+    - compare pricing pages,
+    - assemble a stack in Notion,
+    - and copy-paste credit cards / wallets across multiple sites.
 - There is **no unified way** to:
-- describe your use case in natural language,
-- get a curated stack,
-- and settle the purchase in one place.
+    - describe your use case in natural language,
+    - get a curated stack,
+    - and settle the purchase in one place.
 
 At the same time, Web3 protocols and launchpads want:
 
@@ -105,6 +105,15 @@ High-level architecture:
 
 ![Architecture](docs/architecture.png)
 
+![Home UI](docs/home.png)
+
+![Recommended Stack](docs/stack.png)
+
+![BscScan Transaction](docs/tx.png)
+
+![BscScan Verify Success](docs/success_verify.png)
+
+
 > **Note:** The architecture diagram above is a suggested visual. Feel free to adjust details to match your final deployment and rename `docs/architecture.png` if needed.
 
 ---
@@ -159,7 +168,7 @@ contract VibeMarket {
         payable(owner).transfer(address(this).balance);
     }
 }
-
+```
 The Streamlit app uses `chain_utils.py` to:
 
 - Load the deployed contract (`contract_config.json`)
@@ -187,6 +196,7 @@ The AI agent lives in `agent.py` and is designed as a **Solution Architect** / P
 "roi_analysis": "Why this stack provides the best ROI for the budget / goal.",
 "total_vibe_score": 27.9
 }
+```
 The prompt explicitly asks the model to:
 
 - Respect the available product list (`id`, `price`, `vibe_score`, `ecosystem`, `monthly_cost`)
@@ -248,7 +258,7 @@ Many parts of the system were:
 - Drafted with LLM help (prompts, UI skeletons, JSON schemas)
 - Then reviewed, edited, and wired together manually
 
-To make this transparent, the repository can include an `ai_logs/` folder:
+To make this transparent, the repository includes an `ai_logs/` folder:
 
 - `ai_logs/prompts_agent.md` – evolution of the AI Architect prompt  
 - `ai_logs/prompts_ui.md` – prompts used for UI and UX copy  
@@ -272,7 +282,7 @@ This highlights how Seedify Vibecoins’ **“build with AI”** ethos is applie
 
 ### 2. Clone the repository
 
-    git clone https://github.com/your-org/vibebuyer-pro.git
+    git clone https://github.com/uncxlirh/vibebuyer.ai.git
     cd vibebuyer-pro
 
 ### 3. Set up a virtual environment and install dependencies
@@ -388,6 +398,7 @@ On success, the UI will:
 
 - Show a success message (e.g., “Transaction Complete!”)
 - Display one or more BscScan links so the judge can verify the on-chain activity.
+- Optionally show a verification screenshot (`docs/success_verify.png`) captured during contract verification/deposit confirmation.
 
 7. **Explore the broader ecosystem**  
 

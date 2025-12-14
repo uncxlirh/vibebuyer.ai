@@ -1,11 +1,10 @@
-/* ---------------- GLOBAL ---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 html, body, [class*="css"] {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     background: #F5F5F7;
     color: #111;
-    font-size: 18px; /* 全局增大 */
+    font-size: 18px;
     letter-spacing: -0.01em;
 }
 
@@ -16,15 +15,11 @@ header[data-testid="stHeader"] {
     box-shadow: none;
 }
 
-/* 实际 Apple 宽度：接近 1400～1500 像素 */
 .block-container {
     padding-top: 1.4rem;
     max-width: 1500px !important;
     margin: 0 auto;
 }
-
-
-/* ---------------- HERO ---------------- */
 
 .hero-wrapper {
     padding: 48px 60px;
@@ -36,7 +31,7 @@ header[data-testid="stHeader"] {
 }
 
 .hero-text {
-    font-size: 84px; /* 极大，Apple 风 */
+    font-size: 84px;
     font-weight: 800;
     letter-spacing: -0.055em;
     line-height: 1.03;
@@ -55,9 +50,6 @@ header[data-testid="stHeader"] {
     max-width: 650px;
 }
 
-
-/* ---------------- SECTION LABEL ---------------- */
-
 .section-label {
     margin: 0.3rem 0 0.4rem 0 !important;
     font-size: 14px;
@@ -66,9 +58,6 @@ header[data-testid="stHeader"] {
     color: #888;
     text-transform: uppercase;
 }
-
-
-/* ---------------- METRICS ---------------- */
 
 div[data-testid="stMetric"] {
     background: #FFF;
@@ -90,7 +79,7 @@ div[data-testid="stMetricLabel"] {
 }
 
 div[data-testid="stMetricValue"] {
-    font-size: 40px !important; /* 数字变大 */
+    font-size: 40px !important;
     font-weight: 800 !important;
     background: linear-gradient(90deg, #007AFF, #0A84FF);
     -webkit-background-clip: text;
@@ -100,9 +89,6 @@ div[data-testid="stMetricValue"] {
 div[data-testid="stMetricDelta"] {
     font-size: 16px !important;
 }
-
-
-/* ---------------- INPUT PANEL ---------------- */
 
 .glass-panel {
     margin-top: 1.4rem;
@@ -126,8 +112,6 @@ div[data-testid="stMetricDelta"] {
     box-shadow: 0 0 0 3px rgba(0,122,255,0.25) !important;
 }
 
-
-/* Main button */
 .stButton button {
     background: #007AFF !important;
     color: white !important;
@@ -143,9 +127,6 @@ div[data-testid="stMetricDelta"] {
     box-shadow: 0 14px 36px rgba(0,122,255,0.40);
 }
 
-
-/* ---------------- AI BOX ---------------- */
-
 .ai-box {
     background: #FFF;
     border-radius: 18px;
@@ -159,9 +140,6 @@ div[data-testid="stMetricDelta"] {
     font-size: 20px;
     color: #444;
 }
-
-
-/* ---------------- PRODUCT CARD ---------------- */
 
 .vibe-card {
     background: #FFF;
@@ -188,13 +166,13 @@ div[data-testid="stMetricDelta"] {
 }
 
 .card-title {
-    font-size: 22px; /* 大字号 */
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .card-desc {
-    font-size: 18px; /* 大字号 */
+    font-size: 18px;
     color: #666;
     margin-bottom: 18px;
     line-height: 1.55;
@@ -205,17 +183,12 @@ div[data-testid="stMetricDelta"] {
     font-weight: 700;
 }
 
-
-/* ---------------- SIDEBAR ---------------- */
-
-/* 更有重量感的侧边栏整体背景 */
 section[data-testid="stSidebar"] {
     background: #ECEFF4;
     border-right: 1px solid rgba(15,23,42,0.12);
     box-shadow: 6px 0 24px rgba(15,23,42,0.12);
 }
 
-/* 内部主卡片，像 Apple 的左侧面板 */
 .sidebar-inner {
     margin: 16px 12px;
     padding: 20px 18px 22px 18px;
@@ -225,7 +198,6 @@ section[data-testid="stSidebar"] {
     border: 1px solid rgba(15,23,42,0.06);
 }
 
-/* Sidebar 标题字体更大一点 */
 .sidebar-inner h3, 
 .sidebar-inner h2, 
 .sidebar-inner h1 {
@@ -234,14 +206,12 @@ section[data-testid="stSidebar"] {
     margin-bottom: 4px !important;
 }
 
-/* “Pro Edition v3.0”等说明的字号也加一点 */
 .sidebar-inner p, 
 .sidebar-inner span, 
 .sidebar-inner label {
     font-size: 16px;
 }
 
-/* 成功/提示卡片做得更厚一些 */
 .sidebar-inner .stAlert {
     border-radius: 16px;
     padding: 14px 14px;

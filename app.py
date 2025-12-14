@@ -7,7 +7,6 @@ from pathlib import Path
 from chain_utils import get_balance, buy_item_on_chain, check_connection
 from agent import run_agent_reasoning
 
-# ---------------- 0. Page Config ----------------
 st.set_page_config(
     page_title="VibeBuyer Pro",
     page_icon="⚡",
@@ -15,7 +14,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ---------------- 1. 加载外部 CSS ----------------
+TOOLS_FEED_PATH = "data/tools_feed.json"
+
+
 def load_css(path: str = "style.css"):
     css_path = Path(path)
     if css_path.exists():
@@ -26,19 +27,14 @@ def load_css(path: str = "style.css"):
     else:
         st.warning(f"CSS file not found: {path}")
 
+
 load_css("style.css")
 
-# ---------------- 2. 多语言字典 ----------------
 LANGUAGES = {
     "🇺🇸 English": "en",
     "🇨🇳 中文": "zh",
     "🇯🇵 日本語": "ja",
 }
-
-UI_TEXT = {
-    # ... 这里继续写你刚才那段 UI_TEXT 配置
-}
-
 
 UI_TEXT = {
     "en": {
@@ -121,13 +117,8 @@ UI_TEXT = {
     },
 }
 
-
-
-# ---------------- 3. 侧边栏逻辑 (多语言切换) ----------------
 with st.sidebar:
-    # 新增：包一层重一点的卡片
     st.markdown('<div class="sidebar-inner">', unsafe_allow_html=True)
-
     st.markdown("### ⚡ VibeBuyer")
     st.caption("Pro Edition v3.0")
     st.markdown("---")
@@ -147,9 +138,8 @@ with st.sidebar:
     st.markdown("---")
     st.info("💡 Pro Tip:\nAsk for “Full Stack” to get a curated bundle.")
 
-    st.markdown('</div>', unsafe_allow_html=True)  # 结束 sidebar-inner
+    st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------------- 4. Hero Section ----------------
 st.markdown(
     f"""
 <div class="hero-wrapper">
@@ -165,7 +155,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ---------------- 5. Dashboard Metrics ----------------
 st.markdown(f"<div class='section-label'>{t['protocol_stats']}</div>", unsafe_allow_html=True)
 c1, c2, c3, c4 = st.columns(4)
 c1.metric(t["metric_agents"], "1,024", "+12%")
@@ -175,7 +164,6 @@ c4.metric(t["metric_fee"], "1.0%", "Live")
 
 st.markdown("<br/>", unsafe_allow_html=True)
 
-# ---------------- 工具函数：加载产品数据（带 cache） ----------------
 @st.cache_data
 def load_products(lang: str):
     data_file = f"data/products_{lang}.json"
@@ -184,8 +172,6 @@ def load_products(lang: str):
     with open(data_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
-
-# ---------------- 6. 输入区 + AI 逻辑与展示 ----------------
 with st.container():
     st.markdown('<div class="glass-panel">', unsafe_allow_html=True)
 
@@ -207,8 +193,11 @@ with st.container():
 
     if submitted and query:
         st.markdown("<br/>", unsafe_allow_html=True)
+
+        preferred_ids = st.session_state.get("preferred_ids", [])
+
         with st.spinner(t["ai_thinking"]):
-            res = run_agent_reasoning(query, lang=lang_code)
+            res = run_agent_reasoning(query, lang=lang_code, preferred_ids=preferred_ids)
 
         st.markdown(
             f"""
@@ -275,14 +264,80 @@ with st.container():
 
     st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------------- 7. 底部商品展示：所有商品 + 单品购买 ----------------
+st.markdown("<br/><br/>", unsafe_allow_html=True)
+st.markdown("### 🔭 Tool Radar – Live Indie Tools Feed")
+st.caption("Curated snapshot of recent / trending tools for indie hackers. (Demo feed from tools_feed.json)")
+
+tools_feed = []
+if os.path.exists(TOOLS_FEED_PATH):
+    with open(TOOLS_FEED_PATH, "r", encoding="utf-8") as f:
+        tools_feed = json.load(f)
+
+radar_products = load_products("en")
+
+if tools_feed:
+    for tool in tools_feed:
+        with st.container():
+            st.markdown(
+                f"**[{tool['name']}]({tool['url']})**  ·  "
+                f"{tool.get('source', 'feed').title()}"
+            )
+
+            st.caption(
+                f"✨ Vibe Score: **{tool.get('vibe_score', 0)}**  ·  "
+                f"Tags: {', '.join(tool.get('tags', []))}  ·  "
+                f"First seen: {tool.get('created_at', 'N/A')}"
+            )
+
+            st.write(tool.get("summary", ""))
+
+            cols = st.columns(3)
+
+            with cols[0]:
+                if st.button("🔗 Open", key=f"open_{tool['id']}"):
+                    st.markdown(f"[Open in browser]({tool['url']})")
+
+            with cols[1]:
+                if st.button("⭐ Add to Architect", key=f"add_{tool['id']}"):
+                    preferred = st.session_state.get("preferred_ids", [])
+                    pid = tool.get("linked_product_id")
+                    if pid and pid not in preferred:
+                        preferred.append(pid)
+                        st.session_state["preferred_ids"] = preferred
+                        st.success("Added to AI Architect preference pool.")
+                    else:
+                        st.info("Already in preference pool.")
+
+            with cols[2]:
+                lp_id = tool.get("linked_product_id")
+                linked = None
+                if lp_id:
+                    linked = next((p for p in radar_products if p["id"] == lp_id), None)
+
+                if linked:
+                    label = f"🛒 Buy via Protocol ({linked['price']} BNB)"
+                    if st.button(label, key=f"buy_{tool['id']}"):
+                        with st.spinner(t.get("processing", "Processing on-chain...")):
+                            r = buy_item_on_chain(linked["id"], linked["price"])
+                            if r.get("status") == "success":
+                                st.success(t.get("success_msg", "Transaction Complete!"))
+                                tx_url = f"https://testnet.bscscan.com/tx/{r['tx_hash']}"
+                                st.markdown(f"[View on BscScan]({tx_url})")
+                            else:
+                                st.error(f"Failed: {r['message']}")
+                else:
+                    st.caption("No on-chain product mapped yet.")
+
+            st.markdown("---")
+else:
+    st.info("No tools in radar feed yet. Populate data/tools_feed.json to activate.")
+
 st.markdown("<br/><br/>", unsafe_allow_html=True)
 st.markdown(f"### {t.get('all_products_title', t['explore_title'])}")
 st.markdown("---")
 
 products = load_products(lang_code)
 
-# 一行多少列可以自己调：3 / 4 看你产品多不多
 num_cols = 4
 cols = st.columns(num_cols)
 
@@ -304,7 +359,6 @@ for idx, p in enumerate(products):
             unsafe_allow_html=True,
         )
 
-        # 单个商品购买按钮（注意 key，避免重复）
         if st.button(
             t.get("buy_now", "Buy Now"),
             key=f"buy_single_{p['id']}",

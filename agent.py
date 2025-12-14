@@ -3,7 +3,6 @@ import requests
 import os
 
 def load_products_by_lang(lang_code="en"):
-    # 商业版逻辑：始终优先加载英文数据作为基础，防止翻译版字段缺失
     filename = f"data/products_{lang_code}.json"
     if not os.path.exists(filename):
         filename = "data/products_en.json"
@@ -17,7 +16,7 @@ def query_ollama(prompt, model="llama3.1"):
         "prompt": prompt,
         "stream": False,
         "temperature": 0.2,
-        "format": "json" 
+        "format": "json"
     }
     try:
         response = requests.post(url, json=data)
@@ -26,9 +25,7 @@ def query_ollama(prompt, model="llama3.1"):
         return f'{{"error": "{str(e)}"}}'
 
 def run_agent_reasoning(user_query, lang="en"):
-    products = load_products_by_lang("en") # 强制给 AI 看英文数据，准确率最高
-    
-    # --- 商业级 Prompt：Solution Architect ---
+    products = load_products_by_lang("en")
     prompt = f"""
     You are VibeBuyer, a Senior Solutions Architect.
     User Goal: "{user_query}"
@@ -50,16 +47,14 @@ def run_agent_reasoning(user_query, lang="en"):
         "total_vibe_score": "Average vibe score of items"
     }}
     """
-    
     print(f"🧠 AI Architecting for: {user_query}...")
     raw_res = query_ollama(prompt)
-    
     try:
         return json.loads(raw_res)
     except:
         return {
-            "thought_process": "AI formatting error.", 
+            "thought_process": "AI formatting error.",
             "stack_name": "Error",
-            "selected_ids": [], 
+            "selected_ids": [],
             "roi_analysis": "N/A"
         }

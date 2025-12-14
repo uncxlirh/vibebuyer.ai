@@ -20,7 +20,6 @@ def get_balance():
     bal = web3.eth.get_balance(FROM_ADDRESS)
     return float(web3.from_wei(bal, 'ether'))
 
-# --- 新增：加载合约 ---
 def load_contract():
     if not os.path.exists("contract_config.json"):
         return None
@@ -28,7 +27,6 @@ def load_contract():
         config = json.load(f)
     return web3.eth.contract(address=config["address"], abi=config["abi"])
 
-# --- 修改：购买逻辑 ---
 def buy_item_on_chain(item_id, price_eth, seller_address="0x000000000000000000000000000000000000dEaD"):
     if not check_connection():
         return {"status": "error", "message": "Blockchain not connected"}
@@ -41,17 +39,15 @@ def buy_item_on_chain(item_id, price_eth, seller_address="0x00000000000000000000
         nonce = web3.eth.get_transaction_count(FROM_ADDRESS)
         value_wei = web3.to_wei(price_eth, 'ether')
         
-        # 调用智能合约的 buyItem 函数
-        # 注意：这里我们真的在调用 Solidity 代码！
         tx = contract.functions.buyItem(
             Web3.to_checksum_address(seller_address), 
             str(item_id)
         ).build_transaction({
             'chainId': 97,
-            'gas': 300000, # 给够 Gas
+            'gas': 300000,
             'gasPrice': web3.eth.gas_price,
             'nonce': nonce,
-            'value': value_wei # 附带 BNB
+            'value': value_wei
         })
 
         signed_tx = web3.eth.account.sign_transaction(tx, PRIVATE_KEY)
